@@ -1,0 +1,10 @@
+node_modules/
+dist/*
+!dist/ha-sidebar-colors.js
+.local/
+*.zip
+*.log
+PRUEFUNG.txt
+STAND.txt
+tools/deploy-177.mjs
+tools/verify-177.mjs
