@@ -1,6 +1,6 @@
 {
   "name": "ha-sidebar-colors",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Per-entry sidebar icon and text colors with opacity in Home Assistant's native sidebar editor",
   "license": "MIT",

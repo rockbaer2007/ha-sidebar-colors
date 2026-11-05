@@ -1,8 +1,14 @@
 # Seitenleistenfarben / Sidebar Colors
 
-**0.1.0 · Home Assistant ab 2026.10.3 · DE / EN / FR · MIT**
+**0.1.1 · Home Assistant ab 2026.10.3 · DE / EN / FR · MIT**
 
 Eigene Farbe und Transparenz je Symbol und Beschriftung direkt in **„Seitenleiste bearbeiten“**. Farbfeld anklicken, Farbe wählen und über den vorhandenen HA-Dialog speichern. Auge und Verschiebegriff bleiben erhalten. Keine HA-Core-Dateien werden ersetzt.
+
+## HA-2026.11-Kompatibilität — 0.1.1
+
+Die Farbanwendung im nativen Bearbeitungsdialog unterstützt sowohl `ha-md-list-item` als auch das neue `ha-list-item-button`. Vorhandene Farben, Transparenz und Speicherschlüssel bleiben erhalten; keine Migration nötig. Mindestversion weiterhin HA 2026.10.3.
+
+Das eigenständige Paket besteht lokale DOM-Regressionstests für beide HA-Zeilentypen einschließlich Transparenz, Abbrechen, Speichern, erneutem Öffnen und Theme-Rücksetzung. Der verwandte Manager wurde auf .177 live geprüft; Colors wurde nicht parallel geladen. 27 automatische Tests bestehen. Nur das verwendete Paket aktualisieren; Colors und Manager nicht gleichzeitig laden.
 
 ## HACS / Marketplace installieren
 

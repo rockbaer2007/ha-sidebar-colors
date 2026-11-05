@@ -1,7 +1,7 @@
-/* Sidebar Colors 0.1.0 | MIT | https://github.com/rockbaer2007/ha-sidebar-colors */
+/* Sidebar Colors 0.1.1 | MIT | https://github.com/rockbaer2007/ha-sidebar-colors */
 (() => {
   // src/core.js
-  var VERSION = "0.1.0";
+  var VERSION = "0.1.1";
   var STORE_KEY = "ugso_sidebar_colors_v1";
   function supportedVersion(version) {
     const match = /^(\d+)\.(\d+)\.(\d+)(?:\D.*)?$/.exec(version || "");
@@ -467,7 +467,7 @@
       }
     }
     for (const item of editor.items || []) makeButton(session, item);
-    for (const row of editor.shadowRoot?.querySelectorAll("ha-md-list-item") || []) {
+    for (const row of editor.shadowRoot?.querySelectorAll("ha-md-list-item,ha-list-item-button") || []) {
       const c = rgba(session.draft.colors[row.value]);
       for (const target of row.querySelectorAll("[slot=headline],.icon")) cssColor(target, c);
     }

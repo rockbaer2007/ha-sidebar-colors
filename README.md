@@ -2,11 +2,17 @@
 
 <img src="docs/images/icon.svg" width="80" height="80" alt="Sidebar Colors" />
 
-**0.1.0 · Home Assistant ≥ 2026.10.3 · DE / EN / FR · MIT**
+**0.1.1 · Home Assistant ≥ 2026.10.3 · DE / EN / FR · MIT**
 
 Give each Home Assistant sidebar entry its own icon and text color, including opacity. A color field is added directly to **Edit sidebar**, next to the existing visibility and reorder controls. No Home Assistant core files are replaced.
 
 [Deutsch](docs/README.de.md) · [Français](docs/README.fr.md) · [Full documentation](https://opensource.ugso-software.de/en/projects/sidebar-colors/) · [Downloads](https://github.com/rockbaer2007/ha-sidebar-colors/releases/latest)
+
+## HA 2026.11 compatibility — 0.1.1
+
+Supports both the legacy `ha-md-list-item` and HA 2026.11's `ha-list-item-button` when coloring native editor rows. Existing colors, opacity and storage keys are preserved; no migration is required. Minimum HA remains 2026.10.3.
+
+The standalone bundle passes local DOM regression tests for both HA row types, including opacity, Cancel, Save, reopening and theme reset. The related Manager was live-tested on .177; Colors was not loaded alongside it. 27 automated tests pass. Update only the package you use; do not load Colors and Manager together.
 
 ## Install with HACS / Marketplace
 

@@ -1,5 +1,13 @@
 # Verification scope
 
+## HA 2026.11 compatibility — 0.1.1
+
+Supports both the legacy `ha-md-list-item` and HA 2026.11's `ha-list-item-button` when coloring native editor rows. Existing colors, opacity and storage keys are preserved; no migration is required. Minimum HA remains 2026.10.3.
+
+The standalone bundle passes local DOM regression tests for both HA row types, including opacity, Cancel, Save, reopening and theme reset. The related Manager was live-tested on .177; Colors was not loaded alongside it. 27 automated tests pass. Update only the package you use; do not load Colors and Manager together.
+
+Source bundles and .177 full backup `3c252cf9` were created first. The previous native settings and “Test für APP” were preserved. After approved removal of the oldest full backup, .177 retains three full backups (`3c252cf9`, `2157cbf4`, `2b60a8a7`); app-update and PC backups remain.
+
 ## Runtime
 
 - A real Home Assistant Core **2026.10.4** test installation was backed up before testing.

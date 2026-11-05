@@ -148,7 +148,7 @@ function syncRows(session) {
     }
   }
   for(const item of editor.items || [])makeButton(session,item);
-  for(const row of editor.shadowRoot?.querySelectorAll("ha-md-list-item") || []) {
+  for(const row of editor.shadowRoot?.querySelectorAll("ha-md-list-item,ha-list-item-button") || []) {
     const c=rgba(session.draft.colors[row.value]);
     for(const target of row.querySelectorAll("[slot=headline],.icon"))cssColor(target,c);
   }

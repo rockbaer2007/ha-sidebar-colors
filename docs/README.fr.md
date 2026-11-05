@@ -1,8 +1,14 @@
 # Couleurs du menu latéral / Sidebar Colors
 
-**0.1.0 · Home Assistant à partir de 2026.10.3 · DE / EN / FR · MIT**
+**0.1.1 · Home Assistant à partir de 2026.10.3 · DE / EN / FR · MIT**
 
 Une couleur et une opacité propres à chaque icône et libellé, directement dans **Modifier la barre latérale**. Cliquer sur le carré de couleur, choisir la couleur puis enregistrer dans la fenêtre HA existante. L’œil et la poignée de tri restent disponibles. Aucun fichier du cœur HA n’est remplacé.
+
+## Compatibilité HA 2026.11 — 0.1.1
+
+Les couleurs des lignes de l’éditeur natif prennent en charge `ha-md-list-item` et le nouveau `ha-list-item-button`. Couleurs, opacité et clés de stockage existantes conservées ; aucune migration nécessaire. Version minimale : HA 2026.10.3.
+
+Le paquet autonome réussit les tests DOM pour les deux types de lignes HA : opacité, annulation, enregistrement, réouverture et réinitialisation au thème. Le Manager apparenté a été testé sur .177 ; Colors n’a pas été chargé en parallèle. 27 tests automatisés réussis. Mettre à jour uniquement le paquet utilisé ; ne pas charger Colors et Manager simultanément.
 
 ## Installation HACS / Marketplace
 
